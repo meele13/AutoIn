@@ -6,9 +6,17 @@
         <artifactId>ServerParent</artifactId>
         <groupId>com.gotofinal.autoin</groupId>
         <version>4.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>ServerCore</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.gotofinal.autoin</groupId>
+            <artifactId>AutoIn</artifactId>
+            <version>4.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 </project>

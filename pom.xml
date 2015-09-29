@@ -16,6 +16,7 @@
     </properties>
 
     <modules>
+        <module>Core</module>
         <module>ProxyParent</module>
         <module>ServerParent</module>
         <module>AutoInBuild</module>
@@ -26,7 +27,6 @@
         <defaultGoal>clean install</defaultGoal>
 
         <pluginManagement>
-
             <plugins>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -98,7 +98,7 @@
                     <target>1.8</target>
                     <optimize>true</optimize>
                     <showWarnings>true</showWarnings>
-                    <showDeprecation>true</showDeprecation>
+                    <showDeprecation>false</showDeprecation>
                 </configuration>
                 <dependencies>
                     <dependency>
@@ -167,6 +167,11 @@
             </dependency>
 
 
+            <dependency>
+                <groupId>com.gotofinal.autoin</groupId>
+                <artifactId>AutoIn</artifactId>
+                <version>${ver}</version>
+            </dependency>
             <dependency>
                 <groupId>com.gotofinal.autoin</groupId>
                 <artifactId>BungeeCore</artifactId>
