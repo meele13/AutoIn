@@ -16,4 +16,11 @@
         <module>ServerCore</module>
         <module>SpigotParent</module>
     </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+        </dependency>
+    </dependencies>
 </project>

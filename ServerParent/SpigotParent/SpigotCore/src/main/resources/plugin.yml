@@ -1,0 +1,9 @@
+name: AutoIn
+main: com.gotofinal.autoin.impl.server.spigot.SpigotMain
+author: GotoFinal
+version: 0.1
+softdepend: [ProtocolLib, AuthMe, xAuth, LogIt]
+commands:
+  autoinspigot:
+    aliases: []
+    description: ''

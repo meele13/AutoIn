@@ -145,12 +145,6 @@
                 <scope>provided</scope>
             </dependency>
             <dependency>
-                <groupId>org.spigotmc</groupId>
-                <artifactId>spigot</artifactId>
-                <version>1.8.8-R0.1-SNAPSHOT</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
                 <groupId>net.md-5</groupId>
                 <artifactId>bungeecord-api</artifactId>
                 <version>1.8-SNAPSHOT</version>
@@ -268,16 +262,32 @@
 
     <repositories>
         <repository>
+            <id>spigot-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>snapshots-repo</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
             <id>md_5-releases</id>
             <url>http://repo.md-5.net/content/groups/public/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
         </repository>
         <repository>
             <id>vault-repo</id>
             <url>http://nexus.theyeticave.net/content/repositories/pub_releases</url>
-        </repository>
-        <repository>
-            <id>spigot-repo</id>
-            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
     </repositories>
 </project>

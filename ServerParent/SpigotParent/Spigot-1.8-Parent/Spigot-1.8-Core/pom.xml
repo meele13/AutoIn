@@ -12,4 +12,10 @@
 
     <artifactId>Spigot-1.8-Core</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.gotofinal.autoin</groupId>
+            <artifactId>SpigotCore</artifactId>
+        </dependency>
+    </dependencies>
 </project>
